@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PaperScorer: Submit a Paper</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACl0lEQVR4nOyXX0hTURzHv+feOYMNlrOm0bKyBJPNESb5ECHRQ7WXYtKfV6FClw9RRE/ha0lCUBN66aWXYFZE0R8hLRCTCblpS6LhqCxcD8uhbu7PPZ0zS7bW5pq7dy99YHf3/H73nt/3nnt+P+5PhRQaj/WZiCidoxTNhBAzM5WhOMQopROEwEUTwk3Pg47J3w6y/EeJxeawU0J6mGEdZIQCEXa84HHaHXws8oPFZrgMQq6z4CrIDI9BQKxVDda5We+TN8RkczQKbGmYQw0FoaALUlxlEQTQdqWDc9gqaAQx3sWXvAWlo0XFdns9SgSPzVdAl+2CHVv06O89gXwIR+KYm48gGArD/WEWz4c/4u3Ut9Vu04nVDdbubF4+2ejEDBbCUdQaK6AuE9P8l3pfYGjMD//XH9i2eT2qKrXYWKGBaacBRw/UQxAFuCZnkItV044/Bf8JLFVOHTan+YbHPzFxseT53cdu3Os5DoNes+I/Y2uC1xfAkMufdX4BeRKNJXL6g6EIHr58n2Hft7sm531FLTy+L8EMW61RD8UELP56HamE5pegmAC+Ef9kxP0ZigjQactx8pApzeZh6egceAfZBIgszepqKmGuM+B02x5s2qBd8b1i6dndN4iERCGbgNd32tPGEgs2MOLDbefYXzdk0QXwQhSLS8nzxUgMU9PfWTVc+qc51iQgtRAVSt6FSC7+C8hbgEBIhq1cvfYykpeAvWYjWpu3Z9ivnG3F/qatySJUKMTS5shaKfL9IBl0TeP8tWcohJwClEBgHcsoSgSPzffWOEoEjy1IRLrF3kEUCsNj8j5RDHifBqp3HYkzOQehLBc99zsfJdPQ3d95lbVK9uXGUV6SMSjt8jg7bvBxWnUpRXv+EwAA//+ScJ0SAAAABklEQVQDADlf7uFLUblEAAAAAElFTkSuQmCC">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2064%2064%22%3E%3Crect%20width=%2264%22%20height=%2264%22%20rx=%2213%22%20fill=%22%232F5496%22/%3E%3Ctext%20x=%2232%22%20y=%2250.5%22%20text-anchor=%22middle%22%20font-family=%22Palatino%20Linotype,%20Book%20Antiqua,%20Palatino,%20URW%20Palladio%20L,%20Georgia,%20serif%22%20font-size=%2252%22%20font-weight=%22700%22%20fill=%22%23ffffff%22%3EP%3C/text%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+  <meta name="description" content="Submit an anonymized paper PDF and receive PaperScorer's accept/reject prediction, with a calibrated confidence, by email.">
+  <meta name="color-scheme" content="light">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js" integrity="sha384-weMABwrltA6jWR8DDe9Jp5blk+tZQh7ugpCsF3JwSA53WZM9/14PjS5LAJNHNjAI" crossorigin="anonymous"></script>
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <p class="venue">NeurIPS 2026</p>
+    <h1><span class="brand">PaperScorer</span>: How Predictable Is Paper&nbsp;Acceptance?</h1>
+    <p class="authors">Sachin Konan, Jonathan Liu, Zhuang Liu</p>
+    <p class="affil">Princeton University</p>
+    <nav class="hero-links" aria-label="Project links">
+      <a href="https://sachinkonan.github.io/PaperScorer.html">
+        <svg viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" aria-hidden="true"><path d="M6 2h8.2L20 7.8V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm7.5 1.6V8.5h4.9ZM8 11.2h8v1.6H8Zm0 3.4h8v1.6H8Zm0 3.4h5.5v1.6H8Z"/></svg>
+        Blog
+      </a>
+      <a href="https://arxiv.org/abs/2026.00000">
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18" style="display:block" aria-hidden="true" viewBox="0 0 17.732 24.269"><g><path d="M573.549,280.916l2.266,2.738,6.674-7.84c.353-.47.52-.717.353-1.117a1.218,1.218,0,0,0-1.061-.748h0a.953.953,0,0,0-.712.262Z" transform="translate(-566.984 -271.548)" fill="#bdb9b4"></path><path d="M579.525,282.225l-10.606-10.174a1.413,1.413,0,0,0-.834-.5,1.09,1.09,0,0,0-1.027.66c-.167.4-.047.681.319,1.206l8.44,10.242h0l-6.282,7.716a1.336,1.336,0,0,0-.323,1.3,1.114,1.114,0,0,0,1.04.69A.992.992,0,0,0,571,293l8.519-7.92A1.924,1.924,0,0,0,579.525,282.225Z" transform="translate(-566.984 -271.548)" fill="#b31b1b"></path><path d="M584.32,293.912l-8.525-10.275,0,0L573.53,280.9l-1.389,1.254a2.063,2.063,0,0,0,0,2.965l10.812,10.419a.925.925,0,0,0,.742.282,1.039,1.039,0,0,0,.953-.667A1.261,1.261,0,0,0,584.32,293.912Z" transform="translate(-566.984 -271.548)" fill="#bdb9b4"></path></g></svg>
+        arXiv
+      </a>
+      <a href="https://github.com/zlab-princeton/PaperScorer">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.86 8.37 6.84 9.73.5.1.68-.22.68-.49v-1.9c-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.86.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.06 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.31.1-2.71 0 0 .84-.28 2.75 1.04A9.33 9.33 0 0 1 12 6.96c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.04 2.74-1.04.55 1.4.2 2.45.1 2.71.64.71 1.03 1.62 1.03 2.74 0 3.93-2.34 4.79-4.57 5.04.36.32.68.95.68 1.92v2.82c0 .27.18.59.69.49A10.07 10.07 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"></path></svg>
+        Code
+      </a>
+      <a href="https://huggingface.co/collections/zlab-princeton/paperscorer">
+        <img src="./hf-logo.png" alt="" width="18" height="18" style="display:block">
+        Models
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Score your paper</h2>
+      <p class="lead">Upload the anonymized PDF of your submission. PaperScorer reads its pages and emails you the model's accept or reject decision, together with a calibrated confidence in this prediction.</p>
+    </section>
+
+    <aside class="callout" aria-labelledby="how-hd">
+      <div class="callout-hd" id="how-hd">How it works</div>
+      <ol class="steps">
+        <li><span class="step-n">1</span><span>Upload the anonymized PDF. Only the first 15 pages are read; longer files are trimmed in your browser before upload.</span></li>
+        <li><span class="step-n">2</span><span>PaperScorer reads the page images with the model for your conference: <a href="https://huggingface.co/skonan/PaperScorer-7B-Vision-OpenReview-ICLR"><code>PaperScorer-7B-Vision-OpenReview-ICLR</code></a> for ICLR, and <a href="https://huggingface.co/skonan/PaperScorer-7B-Vision-arXiv"><code>PaperScorer-7B-Vision-arXiv</code></a> for every other venue.</span></li>
+        <li><span class="step-n">3</span><span>The decision and its confidence arrive by email.</span></li>
+      </ol>
+    </aside>
+
+    <div id="banner" class="banner" role="status" hidden>
+      <span class="banner-dot" aria-hidden="true"></span>
+      <span><strong>Running behind.</strong> We are processing a large number of papers right now, so results may take longer than usual.</span>
+    </div>
+
+    <form id="submit-form" class="card" novalidate>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" aria-describedby="email-hint" required>
+        <p class="hint" id="email-hint">The prediction is sent here. Up to 5 submissions per email per day (UTC).</p>
+      </div>
+
+      <div class="field">
+        <label for="conference">Conference</label>
+        <div class="select-wrap">
+          <select id="conference" name="conference" aria-describedby="model-hint" required>
+            <option value="" selected disabled>Choose a conference</option>
+            <option>NeurIPS</option>
+            <option>ICML</option>
+            <option>ICLR</option>
+            <option>CVPR</option>
+            <option>ICCV</option>
+            <option>ECCV</option>
+            <option>ACL</option>
+            <option>EMNLP</option>
+            <option>NAACL</option>
+            <option>AAAI</option>
+            <option>COLM</option>
+            <option>AISTATS</option>
+            <option>CoRL</option>
+          </select>
+        </div>
+        <p class="hint" id="model-hint">The venue you are submitting to picks the model.</p>
+      </div>
+
+      <div class="field">
+        <span class="label" id="pdf-label">Paper</span>
+        <label id="drop" class="drop" for="pdf">
+          <input id="pdf" name="pdf" type="file" accept="application/pdf,.pdf" aria-labelledby="pdf-label" aria-describedby="drop-sub" required>
+          <svg class="drop-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.75h8.5L19 7.25v14H6z M14.5 2.75v4.5H19" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path class="drop-mark" d="M12.5 17.5v-6.5 M9.75 13.5l2.75-2.75 2.75 2.75" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path class="drop-check" d="M9.5 14.25l2.1 2.1 4-4.35" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="drop-text">
+            <span class="drop-main" id="drop-main">Choose a PDF, or drop it here</span>
+            <span class="drop-sub" id="drop-sub">The anonymized submission version, up to 20 MB</span>
+          </span>
+        </label>
+        <p id="pdf-note" class="note" hidden></p>
+      </div>
+
+      <fieldset class="checks">
+        <legend class="label">Confirm</legend>
+        <label class="check"><input id="anonymized" type="checkbox" required> <span>This is the anonymized copy of the paper.</span></label>
+        <label class="check"><input id="author" type="checkbox" required> <span>I am an author of this paper.</span></label>
+      </fieldset>
+
+      <div class="actions">
+        <button id="submit" type="submit" disabled>Preparing…</button>
+        <progress id="progress" max="100" value="0" hidden></progress>
+      </div>
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+    </form>
+
+    <section id="done" class="card done" hidden>
+      <span class="pill pill-ok">Submitted</span>
+      <h2>Your paper is in the queue</h2>
+      <div class="result-link">
+        <span class="label" id="done-link-label">Your result page</span>
+        <div class="link-row">
+          <a id="done-link" class="link-url" href="./" aria-labelledby="done-link-label done-link"></a>
+          <button id="copy-link" type="button" class="secondary copy-btn" aria-label="Copy the result link">
+            <svg class="i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11" height="12" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 8.5V5.6A1.6 1.6 0 0 0 13.9 4H6.1A1.6 1.6 0 0 0 4.5 5.6v9.8A1.6 1.6 0 0 0 6.1 17h2.4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            <svg class="i-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span id="copy-text">Copy</span>
+          </button>
+        </div>
+        <p class="hint">Bookmark this. We will also email it to you.</p>
+      </div>
+      <p>We will email the decision and its confidence to <strong id="done-email"></strong>.</p>
+      <p class="mute">If the worker finds a problem with the pages or the anonymization, that email will say what to fix instead.</p>
+      <p class="mute">Submission id <code id="done-id"></code></p>
+      <button id="again" type="button" class="secondary">Submit another paper</button>
+    </section>
+
+    <section class="fine" aria-labelledby="fine-hd">
+      <h3 id="fine-hd">Good to know</h3>
+      <ul>
+        <li>The result is the model's accept or reject decision plus a calibrated confidence in this prediction, not a review.</li>
+        <li>Before scoring, the worker re-checks the pages and the anonymization. If either fails, you get an email explaining what to fix.</li>
+        <li>Only the first 15 pages are read, and the PDF can be at most 20 MB.</li>
+        <li>Each email can submit up to 5 papers per day (UTC).</li>
+      </ul>
+    </section>
+
+    <section class="fine" id="examples" aria-labelledby="ex-hd">
+      <h3 id="ex-hd">Examples of good papers</h3>
+      <p>Below are well-known, good papers, anonymized and scored using PaperScorer-Vision. Each one is placed by its chance of acceptance divided by its venue's base rate (ICLR accepts ~31%, top venues accept ~25%), so 2&times; means twice as likely as a typical submission. Papers at 1&times; or above lean Accept. Two of these papers were actually rejected. The first is an early version of <em>A Decade's Battle on Dataset Bias</em> (ECCV 2024), which PaperScorer-Vision correctly predicts as a reject. The second is <em>Mamba</em>, rejected at ICLR 2024 but given a 71% chance (2.3&times; the ICLR base rate); many would argue it deserved acceptance. We also include the newer, accepted ICLR version of <em>A Decade's Battle on Dataset Bias</em>, which PaperScorer-Vision correctly predicts as an accept. These papers show that PaperScorer agrees with, and sometimes defies, previous decisions, based on its estimation of quality. Click a paper to see its pages.</p>
+      <div class="ex-line" id="ex-line"></div>
+      <ul class="ex-list" id="ex-list"></ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><span class="brand">PaperScorer</span> · Konan, Liu and Liu · Princeton University · NeurIPS 2026</p>
+  </footer>
+  <dialog class="lb" id="lb"><img id="lb-img" alt=""><p id="lb-cap"></p></dialog>
+  <script src="./examples.js" defer></script>
+</body>
+</html>

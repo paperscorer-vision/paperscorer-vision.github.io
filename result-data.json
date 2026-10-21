@@ -1,0 +1,1656 @@
+{
+ "split": "natural-rate test set",
+ "binWidth": 0.1,
+ "minPlot": 5,
+ "seed": 20261018,
+ "models": {
+  "iclr": {
+   "name": "PaperScorer-7B-Vision-OpenReview-ICLR",
+   "hf": "https://huggingface.co/skonan/PaperScorer-7B-Vision-OpenReview-ICLR",
+   "tau": 1.251,
+   "prior": 0.314,
+   "priorBin": 3,
+   "n": 1594,
+   "nAccepted": 499,
+   "acceptRate": 0.313,
+   "meanP": 0.2925,
+   "bins": [
+    {
+     "lo": 0.0,
+     "hi": 0.1,
+     "n": 282,
+     "nAccepted": 19,
+     "rate": 0.0674,
+     "meanP": 0.042,
+     "plotted": true,
+     "nPredicted": {
+      "accept": 0,
+      "reject": 282
+     }
+    },
+    {
+     "lo": 0.1,
+     "hi": 0.2,
+     "n": 253,
+     "nAccepted": 46,
+     "rate": 0.1818,
+     "meanP": 0.1479,
+     "plotted": true,
+     "nPredicted": {
+      "accept": 0,
+      "reject": 253
+     }
+    },
+    {
+     "lo": 0.2,
+     "hi": 0.3,
+     "n": 313,
+     "nAccepted": 86,
+     "rate": 0.2748,
+     "meanP": 0.2488,
+     "plotted": true,
+     "nPredicted": {
+      "accept": 0,
+      "reject": 313
+     }
+    },
+    {
+     "lo": 0.3,
+     "hi": 0.4,
+     "n": 220,
+     "nAccepted": 84,
+     "rate": 0.3818,
+     "meanP": 0.3511,
+     "plotted": true,
+     "nPredicted": {
+      "accept": 220,
+      "reject": 0
+     }
+    },
+    {
+     "lo": 0.4,
+     "hi": 0.5,
+     "n": 281,
+     "nAccepted": 127,
+     "rate": 0.452,
+     "meanP": 0.4409,
+     "plotted": true,
+     "nPredicted": {
+      "accept": 281,
+      "reject": 0
+     }
+    },
+    {
+     "lo": 0.5,
+     "hi": 0.6,
+     "n": 181,
+     "nAccepted": 96,
+     "rate": 0.5304,
+     "meanP": 0.5377,
+     "plotted": true,
+     "nPredicted": {
+      "accept": 181,
+      "reject": 0
+     }
+    },
+    {
+     "lo": 0.6,
+     "hi": 0.7,
+     "n": 60,
+     "nAccepted": 39,
+     "rate": 0.65,
+     "meanP": 0.6293,
+     "plotted": true,
+     "nPredicted": {
+      "accept": 60,
+      "reject": 0
+     }
+    },
+    {
+     "lo": 0.7,
+     "hi": 0.8,
+     "n": 4,
+     "nAccepted": 2,
+     "rate": 0.5,
+     "meanP": 0.7392,
+     "plotted": false,
+     "nPredicted": {
+      "accept": 4,
+      "reject": 0
+     }
+    },
+    {
+     "lo": 0.8,
+     "hi": 0.9,
+     "n": 0,
+     "nAccepted": 0,
+     "rate": null,
+     "meanP": null,
+     "plotted": false,
+     "nPredicted": {
+      "accept": 0,
+      "reject": 0
+     }
+    },
+    {
+     "lo": 0.9,
+     "hi": 1.0,
+     "n": 0,
+     "nAccepted": 0,
+     "rate": null,
+     "meanP": null,
+     "plotted": false,
+     "nPredicted": {
+      "accept": 0,
+      "reject": 0
+     }
+    }
+   ],
+   "examples": {
+    "accept": [
+     null,
+     null,
+     null,
+     {
+      "from": [
+       {
+        "bin": 3,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "P2OXYO3bEe",
+        "title": "Tina: Tiny Reasoning Models via LoRA",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "jkUp3lybXf",
+        "title": "Preference Optimization for Reasoning with Pseudo Feedback",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "UsVJlgD1F7",
+        "title": "Learning Graph Invariance by Harnessing Spuriosity",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "UOzxviKVFO",
+        "title": "Exploratory Memory-Augmented LLM Agent via Hybrid On- and Off-Policy Optimization",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "au6cziMtGM",
+        "title": "Interp3D: Correspondence-aware Interpolation for Generative Textured 3D Morphing",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "4muXQ5r8Ol",
+        "title": "A-Bench: Are LMMs Masters at Evaluating AI-generated Images?",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "FqWtMGw8tt",
+        "title": "KnowData: Knowledge-Enabled Data Generation for Improving Multimodal Models",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "54fRCbXKwS",
+        "title": "Towards the Mysteries of Convergent Interaction Representations through DNNs",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "8EM1A6qfX5",
+        "title": "Unearthing Large Scale Domain-Specific Knowledge from Public Corpora",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "Pg7V0VGS3p",
+        "title": "Target-Driven Policy Optimization for Sequential Counterfactual Outcome Control",
+        "venue": "ICLR 2026"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 4,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "WYiK0o8q02",
+        "title": "TRACE: Theoretical Risk Attribution under Covariate-shift Effects",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "U47ymTS3ut",
+        "title": "Mask in the Mirror: Implicit Sparsification",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "i8LCUpKvAz",
+        "title": "Minimax Optimal Reinforcement Learning with Quasi-Optimism",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "MCHuGOkExF",
+        "title": "SFS: Smarter Code Space Search improves LLM Inference Scaling",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "sZGZJhaNSe",
+        "title": "Aioli: A Unified Optimization Framework for Language Model Data Mixing",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "HDIf3fYqPP",
+        "title": "Null-Space Filtering for Data-free Continual Model Merging: Preserving Transparency, Promoting Fidelity",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "stK7iOPH9Q",
+        "title": "Lotus: Diffusion-based Visual Foundation Model for High-quality Dense Prediction",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "XAoht8iLj9",
+        "title": "Decomposing Policy Optimization into Proxy Objective and Knowledge Distillation for Long-context Reasoning",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "tubF5vyrQ0",
+        "title": "VUGEN: Visual Understanding priors for GENeration",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "hLioTiMs3B",
+        "title": "Contrastive CFG: Guiding Diffusion Sampling by Contrasting Positive and Negative Concepts",
+        "venue": "ICLR 2026"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 5,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "G1CN7R5qwE",
+        "title": "InstaRevive: One-Step Image Enhancement via Dynamic Score Matching",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "EKLhCNjzQR",
+        "title": "Provable Derivative-Free Inference with Score-Based Generative Priors",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "TOiageVNru",
+        "title": "Physics-informed Temporal Difference Metric Learning for Robot Motion Planning",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "haNKHOak3J",
+        "title": "When sufficiency is insufficient: Probabilistic neural representations as an information bottleneck",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "6AhDxoT6rq",
+        "title": "Optimal Batched (Generalized) Linear Contextual Bandit Algorithm",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "fUN2Hm0ZUz",
+        "title": "3D PixBrush: Image-Guided Local Texture Synthesis",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "tyEyYT267x",
+        "title": "Block Diffusion: Interpolating Between Autoregressive and Diffusion Language Models",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "EbjbESm8MD",
+        "title": "Revisit Visual Prompt Tuning: The Expressiveness of Prompt Experts",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "UJvkXnuozY",
+        "title": "Tucker-FNO: Tensor Tucker-Fourier Neural Operator and its Universal Approximation Theory",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "LB5cKhgOTu",
+        "title": "QERA: an Analytical Framework for Quantization Error Reconstruction",
+        "venue": "ICLR 2025"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 6,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "qG6O3jMkCj",
+        "title": "SurvHTE-Bench: A Benchmark for Heterogeneous Treatment Effect Estimation in Survival Analysis",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "KW3AD1u5bJ",
+        "title": "Non-Clashing Teaching in Graphs: Algorithms, Complexity, and Bounds",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "AZ0VQouDmR",
+        "title": "DetailMaster: Can Your Text-to-Image Model Handle Long Prompts?",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "eGqQyTAbXC",
+        "title": "3D-MolT5: Leveraging Discrete Structural Information for Molecule-Text Modeling",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "WsgEWL8i0K",
+        "title": "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "INy8guZqrm",
+        "title": "HUMOF: Human Motion Forecasting in Interactive Social Scenes",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "8VtGeyJyx9",
+        "title": "LoLCATs: On Low-Rank Linearizing of Large Language Models",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "Jszf4et48m",
+        "title": "ToddlerDiffusion: Interactive Structured Image Generation with Cascaded Schrödinger Bridge",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "no8Ooy0vaH",
+        "title": "A3 : an Analytical Low-Rank Approximation Framework for Attention",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "cTR17xl89h",
+        "title": "BodyGen: Advancing Towards Efficient Embodiment Co-Design",
+        "venue": "ICLR 2025"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 7,
+        "n": 4
+       },
+       {
+        "bin": 6,
+        "n": 6
+       }
+      ],
+      "papers": [
+       {
+        "id": "S5wIXxlvfw",
+        "title": "Differentiation Through Black-Box Quadratic Programming Solvers",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "5UKrnKuspb",
+        "title": "NeuralPlane: Structured 3D Reconstruction in Planar Primitives with Neural Fields",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "fIPng6j4eM",
+        "title": "Scaling Sequence-to-Sequence Generative Neural Rendering",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "BScFgd7MGm",
+        "title": "Towards Scalable and Consistent 3D Editing",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "qG6O3jMkCj",
+        "title": "SurvHTE-Bench: A Benchmark for Heterogeneous Treatment Effect Estimation in Survival Analysis",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "KW3AD1u5bJ",
+        "title": "Non-Clashing Teaching in Graphs: Algorithms, Complexity, and Bounds",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "AZ0VQouDmR",
+        "title": "DetailMaster: Can Your Text-to-Image Model Handle Long Prompts?",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "eGqQyTAbXC",
+        "title": "3D-MolT5: Leveraging Discrete Structural Information for Molecule-Text Modeling",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "WsgEWL8i0K",
+        "title": "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "INy8guZqrm",
+        "title": "HUMOF: Human Motion Forecasting in Interactive Social Scenes",
+        "venue": "ICLR 2026"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 7,
+        "n": 4
+       },
+       {
+        "bin": 6,
+        "n": 6
+       }
+      ],
+      "papers": [
+       {
+        "id": "S5wIXxlvfw",
+        "title": "Differentiation Through Black-Box Quadratic Programming Solvers",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "5UKrnKuspb",
+        "title": "NeuralPlane: Structured 3D Reconstruction in Planar Primitives with Neural Fields",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "fIPng6j4eM",
+        "title": "Scaling Sequence-to-Sequence Generative Neural Rendering",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "BScFgd7MGm",
+        "title": "Towards Scalable and Consistent 3D Editing",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "qG6O3jMkCj",
+        "title": "SurvHTE-Bench: A Benchmark for Heterogeneous Treatment Effect Estimation in Survival Analysis",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "KW3AD1u5bJ",
+        "title": "Non-Clashing Teaching in Graphs: Algorithms, Complexity, and Bounds",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "AZ0VQouDmR",
+        "title": "DetailMaster: Can Your Text-to-Image Model Handle Long Prompts?",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "eGqQyTAbXC",
+        "title": "3D-MolT5: Leveraging Discrete Structural Information for Molecule-Text Modeling",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "WsgEWL8i0K",
+        "title": "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "INy8guZqrm",
+        "title": "HUMOF: Human Motion Forecasting in Interactive Social Scenes",
+        "venue": "ICLR 2026"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 7,
+        "n": 4
+       },
+       {
+        "bin": 6,
+        "n": 6
+       }
+      ],
+      "papers": [
+       {
+        "id": "S5wIXxlvfw",
+        "title": "Differentiation Through Black-Box Quadratic Programming Solvers",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "5UKrnKuspb",
+        "title": "NeuralPlane: Structured 3D Reconstruction in Planar Primitives with Neural Fields",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "fIPng6j4eM",
+        "title": "Scaling Sequence-to-Sequence Generative Neural Rendering",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "BScFgd7MGm",
+        "title": "Towards Scalable and Consistent 3D Editing",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "qG6O3jMkCj",
+        "title": "SurvHTE-Bench: A Benchmark for Heterogeneous Treatment Effect Estimation in Survival Analysis",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "KW3AD1u5bJ",
+        "title": "Non-Clashing Teaching in Graphs: Algorithms, Complexity, and Bounds",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "AZ0VQouDmR",
+        "title": "DetailMaster: Can Your Text-to-Image Model Handle Long Prompts?",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "eGqQyTAbXC",
+        "title": "3D-MolT5: Leveraging Discrete Structural Information for Molecule-Text Modeling",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "WsgEWL8i0K",
+        "title": "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "INy8guZqrm",
+        "title": "HUMOF: Human Motion Forecasting in Interactive Social Scenes",
+        "venue": "ICLR 2026"
+       }
+      ]
+     }
+    ],
+    "reject": [
+     {
+      "from": [
+       {
+        "bin": 0,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "DtATVd5NLc",
+        "title": "Finetuning Weather Foundation Models to Develop Climate Model Parameterizations",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "EjH5I9ziug",
+        "title": "Boosting Language Model Fine-Tuning via Zeroth-Order Hybrid Methods with Additional Memory Aid",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "90EZvjKMqK",
+        "title": "Security-Constrained Fine-tuning: Preventing Knowledge Restoration in Unlearned Models",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "g03rPJwRwS",
+        "title": "Delta-MIA: Measuring Membership Inference Attacks in Large Language Models via self-Contrast Framework",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "0vMLqSdsKW",
+        "title": "A Unified Causal Framework for Auditing Recommender Systems for Ethical Concerns",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "2bWf4M5tRo",
+        "title": "Enhancing Hallucination Detection with Noise Injection",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "Zk1JX3BAdO",
+        "title": "AdaKAN: Kolmogorov-Arnold Networks with Adaptive Spectral Decomposition for Time Series Forecasting",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "J0eNXpnrc7",
+        "title": "All-in-One: Boosting Basic Capabilities in one Omni-MLLM to Enhance Movie Understanding",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "l7GZ3vswuD",
+        "title": "Neural-Guided Enumerative SAT Framework for Cryptographic Key Recovery",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "dD6b5RREws",
+        "title": "Bootstrap Sampling Rate Greater than 1.0 May Improve Random Forest Performance",
+        "venue": "ICLR 2025"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 1,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "Se2aTG9Oui",
+        "title": "CoNNect: A Swiss-Army-Knife Regularizer for Pruning of Neural Networks",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "SPcmEiiDDo",
+        "title": "Episodic Control-Based Adversarial Policy Learning in Two-player Competitive Games",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "Ktd8Zus4G8",
+        "title": "CC-Time: Cross-Model and Cross-Modality Time Series Forecasting",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "4oA5xPOTmy",
+        "title": "Multimodal Cancer Survival Analysis with Learnable Queries",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "SBCMNc3Mq3",
+        "title": "ECD: A Machine Learning Benchmark for Predicting Enhanced-Precision Electronic Charge Density in Crystalline Inorganic Materials",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "qqoQKCulZt",
+        "title": "The Gaussian-Head OFL Family: One-Shot Federated Learning from Client Global Statistics",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "WwQdcQROmb",
+        "title": "A Probabilistic Generative Method for Safe Physical System Control Problems",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "EmBWPLSfe2",
+        "title": "DeepResearchGym: A Free, Transparent, and Reproducible Evaluation Sandbox for Deep Research",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "LlhiiTg9ux",
+        "title": "DimPO: Dimensionality Reduction for Attention using Preference Optimization",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "nEakAzCZQP",
+        "title": "Beyond GPS: Tri-Modal Contrastive Learning for Global Geo-Localization",
+        "venue": "ICLR 2026"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 2,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "yYxEFC3Ep4",
+        "title": "Where Do Images Come From? Analyzing Captions to Geographically Profile Datasets",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "VdX9tL3VXH",
+        "title": "A long range foundation model for zero-shot predictions in single-cell and spatial transcriptomics data",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "9VRFPC29nb",
+        "title": "Simplified Mamba with Disentangled Dependency Encoding for Long-Term Time Series Forecasting",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "wtMh0PxDPO",
+        "title": "3D-GP-LMVIC: Learning-based Multi-View Image Compression with 3D Gaussian Geometric Priors",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "hi6opqxk5X",
+        "title": "Provably Fast Density-Based Clustering in High Dimensions",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "ACroNFU7Do",
+        "title": "LiveProteinBench: A Contamination-Free Benchmark for Assessing Models' Specialized Capabilities in Protein Science",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "PbuKIwKg7A",
+        "title": "Atomos: Hierarchical Reasoning From Atomic Steps",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "k73R7xdWtl",
+        "title": "An Online Learning Approach to Prompt-based Selection of Generative Models",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "Upoxh7wvmJ",
+        "title": "Strong Preferences Affect the Robustness of Preference Models and Value Alignment",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "3UyFKkEpME",
+        "title": "Diagnosing and Mitigating Systemic Reward Bias in Self-Rewarding RL",
+        "venue": "ICLR 2026"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 2,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "yYxEFC3Ep4",
+        "title": "Where Do Images Come From? Analyzing Captions to Geographically Profile Datasets",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "VdX9tL3VXH",
+        "title": "A long range foundation model for zero-shot predictions in single-cell and spatial transcriptomics data",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "9VRFPC29nb",
+        "title": "Simplified Mamba with Disentangled Dependency Encoding for Long-Term Time Series Forecasting",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "wtMh0PxDPO",
+        "title": "3D-GP-LMVIC: Learning-based Multi-View Image Compression with 3D Gaussian Geometric Priors",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "hi6opqxk5X",
+        "title": "Provably Fast Density-Based Clustering in High Dimensions",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "ACroNFU7Do",
+        "title": "LiveProteinBench: A Contamination-Free Benchmark for Assessing Models' Specialized Capabilities in Protein Science",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "PbuKIwKg7A",
+        "title": "Atomos: Hierarchical Reasoning From Atomic Steps",
+        "venue": "ICLR 2026"
+       },
+       {
+        "id": "k73R7xdWtl",
+        "title": "An Online Learning Approach to Prompt-based Selection of Generative Models",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "Upoxh7wvmJ",
+        "title": "Strong Preferences Affect the Robustness of Preference Models and Value Alignment",
+        "venue": "ICLR 2025"
+       },
+       {
+        "id": "3UyFKkEpME",
+        "title": "Diagnosing and Mitigating Systemic Reward Bias in Self-Rewarding RL",
+        "venue": "ICLR 2026"
+       }
+      ]
+     },
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ]
+   }
+  },
+  "arxiv": {
+   "name": "PaperScorer-7B-Vision-arXiv",
+   "hf": "https://huggingface.co/skonan/PaperScorer-7B-Vision-arXiv",
+   "tau": 1.499,
+   "prior": 0.232,
+   "priorBin": 2,
+   "n": 1468,
+   "nAccepted": 364,
+   "acceptRate": 0.248,
+   "meanP": 0.2181,
+   "bins": [
+    {
+     "lo": 0.0,
+     "hi": 0.1,
+     "n": 674,
+     "nAccepted": 38,
+     "rate": 0.0564,
+     "meanP": 0.041,
+     "plotted": true,
+     "nPredicted": {
+      "accept": 0,
+      "reject": 674
+     }
+    },
+    {
+     "lo": 0.1,
+     "hi": 0.2,
+     "n": 242,
+     "nAccepted": 35,
+     "rate": 0.1446,
+     "meanP": 0.1461,
+     "plotted": true,
+     "nPredicted": {
+      "accept": 0,
+      "reject": 242
+     }
+    },
+    {
+     "lo": 0.2,
+     "hi": 0.3,
+     "n": 169,
+     "nAccepted": 58,
+     "rate": 0.3432,
+     "meanP": 0.2463,
+     "plotted": true,
+     "nPredicted": {
+      "accept": 115,
+      "reject": 54
+     }
+    },
+    {
+     "lo": 0.3,
+     "hi": 0.4,
+     "n": 81,
+     "nAccepted": 30,
+     "rate": 0.3704,
+     "meanP": 0.3537,
+     "plotted": true,
+     "nPredicted": {
+      "accept": 81,
+      "reject": 0
+     }
+    },
+    {
+     "lo": 0.4,
+     "hi": 0.5,
+     "n": 91,
+     "nAccepted": 47,
+     "rate": 0.5165,
+     "meanP": 0.4508,
+     "plotted": true,
+     "nPredicted": {
+      "accept": 91,
+      "reject": 0
+     }
+    },
+    {
+     "lo": 0.5,
+     "hi": 0.6,
+     "n": 64,
+     "nAccepted": 39,
+     "rate": 0.6094,
+     "meanP": 0.546,
+     "plotted": true,
+     "nPredicted": {
+      "accept": 64,
+      "reject": 0
+     }
+    },
+    {
+     "lo": 0.6,
+     "hi": 0.7,
+     "n": 59,
+     "nAccepted": 44,
+     "rate": 0.7458,
+     "meanP": 0.6485,
+     "plotted": true,
+     "nPredicted": {
+      "accept": 59,
+      "reject": 0
+     }
+    },
+    {
+     "lo": 0.7,
+     "hi": 0.8,
+     "n": 41,
+     "nAccepted": 29,
+     "rate": 0.7073,
+     "meanP": 0.7538,
+     "plotted": true,
+     "nPredicted": {
+      "accept": 41,
+      "reject": 0
+     }
+    },
+    {
+     "lo": 0.8,
+     "hi": 0.9,
+     "n": 25,
+     "nAccepted": 22,
+     "rate": 0.88,
+     "meanP": 0.8463,
+     "plotted": true,
+     "nPredicted": {
+      "accept": 25,
+      "reject": 0
+     }
+    },
+    {
+     "lo": 0.9,
+     "hi": 1.0,
+     "n": 22,
+     "nAccepted": 22,
+     "rate": 1.0,
+     "meanP": 0.9379,
+     "plotted": true,
+     "nPredicted": {
+      "accept": 22,
+      "reject": 0
+     }
+    }
+   ],
+   "examples": {
+    "accept": [
+     null,
+     null,
+     {
+      "from": [
+       {
+        "bin": 2,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "2510.03814",
+        "title": "Detecting Invariant Manifolds in ReLU-Based RNNs",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2410.13817",
+        "title": "Guided Reinforcement Learning for Robust Multi-Contact Loco-Manipulation",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2506.13751",
+        "title": "LeVERB: Humanoid Whole-Body Control with Latent Vision-Language Instruction",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2510.20803",
+        "title": "ARGenSeg: Image Segmentation with Autoregressive Image Generation Model",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2503.17821",
+        "title": "OvercookedV2: Rethinking Overcooked for Zero-Shot Coordination",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2402.01146",
+        "title": "Limited Memory Online Gradient Descent for Kernelized Pairwise Learning with Dynamic Averaging",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2502.19412",
+        "title": "The Mighty ToRR: A Benchmark for Table Reasoning and Robustness",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2601.05572",
+        "title": "Towards Generalized Multi-Image Editing for Unified Multimodal Models",
+        "venue": "arXiv 2026"
+       },
+       {
+        "id": "2506.00759",
+        "title": "Understanding and Mitigating Cross-lingual Privacy Leakage via Language-specific and Universal Privacy Neurons",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2504.14359",
+        "title": "A Multimodal Recaptioning Framework to Account for Perceptual Diversity Across Languages in Vision-Language Modeling",
+        "venue": "arXiv 2025"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 3,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "2401.17536",
+        "title": "PipeNet: Question Answering with Semantic Pruning over Knowledge Graphs",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2411.18729",
+        "title": "Multi-Task Model Merging via Adaptive Weight Disentanglement",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2503.08057",
+        "title": "Odysseus Navigates the Sirens' Song: Dynamic Focus Decoding for Factual and Diverse Open-Ended Text Generation",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2407.18517",
+        "title": "SLIM: Style-Linguistics Mismatch Model for Generalized Audio Deepfake Detection",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2501.01830",
+        "title": "Auto-RT: Automatic Jailbreak Strategy Exploration for Red-Teaming Large Language Models",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2311.06694",
+        "title": "Which One? Leveraging Context Between Objects and Multiple Views for Language Grounding",
+        "venue": "arXiv 2023"
+       },
+       {
+        "id": "2506.05327",
+        "title": "Revisiting Depth Representations for Feed-Forward 3D Gaussian Splatting",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2505.10147",
+        "title": "Near Optimal Best Arm Identification for Clustered Bandits",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2401.17270",
+        "title": "YOLO-World: Real-Time Open-Vocabulary Object Detection",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2403.01560",
+        "title": "Rethinking CLIP-based Video Learners in Cross-Domain Open-Vocabulary Action Recognition",
+        "venue": "arXiv 2024"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 4,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "2412.08920",
+        "title": "From Text to Trajectory: Exploring Complex Constraint Representation and Decomposition in Safe Reinforcement Learning",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2502.08136",
+        "title": "In-Context Learning of Linear Dynamical Systems with Transformers: Approximation Bounds and Depth-Separation",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2501.12632",
+        "title": "TeD-Loc: Text Distillation for Weakly Supervised Object Localization",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2404.09491",
+        "title": "Large Language Models Can Automatically Engineer Features for Few-Shot Tabular Learning",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2310.18961",
+        "title": "AnomalyCLIP: Object-agnostic Prompt Learning for Zero-shot Anomaly Detection",
+        "venue": "arXiv 2023"
+       },
+       {
+        "id": "2501.18590",
+        "title": "DiffusionRenderer: Neural Inverse and Forward Rendering with Video Diffusion Models",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2306.13926",
+        "title": "Quantifying the Optimization and Generalization Advantages of Graph Neural Networks Over Multilayer Perceptrons",
+        "venue": "arXiv 2023"
+       },
+       {
+        "id": "2506.17929",
+        "title": "ASTER: Adaptive Spatio-Temporal Early Decision Model for Dynamic Resource Allocation",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2505.06552",
+        "title": "References Indeed Matter? Reference-Free Preference Optimization for Conversational Query Reformulation",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2403.19963",
+        "title": "Efficient Modulation for Vision Networks",
+        "venue": "arXiv 2024"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 5,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "2503.15672",
+        "title": "GASP: Unifying Geometric and Semantic Self-Supervised Pre-training for Autonomous Driving",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2603.14750",
+        "title": "Face-Guided Sentiment Boundary Enhancement for Weakly-Supervised Temporal Sentiment Localization",
+        "venue": "arXiv 2026"
+       },
+       {
+        "id": "2503.15300",
+        "title": "SUM Parts: Benchmarking Part-Level Semantic Segmentation of Urban Meshes",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2412.09428",
+        "title": "Multimodal Music Generation with Explicit Bridges and Retrieval Augmentation",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2505.16778",
+        "title": "Single Domain Generalization for Few-Shot Counting via Universal Representation Matching",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2503.21259",
+        "title": "Reducing CT Metal Artifacts by Learning Latent Space Alignment with Gemstone Spectral Imaging Data",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2501.13456",
+        "title": "KAA: Kolmogorov-Arnold Attention for Enhancing Attentive Graph Neural Networks",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2408.05804",
+        "title": "A Single Goal is All You Need: Skills and Exploration Emerge from Contrastive RL without Rewards, Demonstrations, or Subgoals",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2411.17957",
+        "title": "DiffVax: Optimization-Free Image Immunization Against Diffusion-Based Editing",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2403.14401",
+        "title": "Pensieve: Retrospect-then-Compare Mitigates Visual Hallucination",
+        "venue": "arXiv 2024"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 6,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "2506.16471",
+        "title": "Progressive Inference-Time Annealing of Diffusion Models for Sampling from Boltzmann Densities",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2312.04565",
+        "title": "MuRF: Multi-Baseline Radiance Fields",
+        "venue": "arXiv 2023"
+       },
+       {
+        "id": "2403.12037",
+        "title": "MineDreamer: Learning to Follow Instructions via Chain-of-Imagination for Simulated-World Control",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2501.06710",
+        "title": "Multi-task Visual Grounding with Coarse-to-Fine Consistency Constraints",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2501.11549",
+        "title": "Whose Boat Does it Float? Improving Personalization in Preference Tuning via Inferred User Personas",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2510.26389",
+        "title": "Adaptive Context Length Optimization with Low-Frequency Truncation for Multi-Agent Reinforcement Learning",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2405.15319",
+        "title": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2211.09810",
+        "title": "Tightening Robustness Verification of MaxPool-based Neural Networks via Minimizing the Over-Approximation Zone",
+        "venue": "arXiv 2022"
+       },
+       {
+        "id": "2404.12464",
+        "title": "NormAd: A Framework for Measuring the Cultural Adaptability of Large Language Models",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2406.07221",
+        "title": "Open-World Human-Object Interaction Detection via Multi-modal Prompts",
+        "venue": "arXiv 2024"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 7,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "2506.08607",
+        "title": "Sample Efficient Demonstration Selection for In-Context Learning",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2310.04353",
+        "title": "An In-Context Learning Agent for Formal Theorem-Proving",
+        "venue": "arXiv 2023"
+       },
+       {
+        "id": "2402.05468",
+        "title": "Implicit Diffusion: Efficient Optimization through Stochastic Sampling",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2511.06138",
+        "title": "Latent Refinement via Flow Matching for Training-free Linear Inverse Problem Solving",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2404.09349",
+        "title": "Adversarial Robustness Limits via Scaling-Law and Human-Alignment Studies",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2603.19076",
+        "title": "DROID-SLAM in the Wild",
+        "venue": "arXiv 2026"
+       },
+       {
+        "id": "2403.13780",
+        "title": "Information-Theoretic Distillation for Reference-less Summarization",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2402.04114",
+        "title": "SCAFFLSA: Taming Heterogeneity in Federated Linear Stochastic Approximation and TD Learning",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2603.18891",
+        "title": "PromptHub: Enhancing Multi-Prompt Visual In-Context Learning with Locality-Aware Fusion, Concentration and Alignment",
+        "venue": "arXiv 2026"
+       },
+       {
+        "id": "2510.19710",
+        "title": "SEMPO: Lightweight Foundation Models for Time Series Forecasting",
+        "venue": "arXiv 2025"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 8,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "2510.08396",
+        "title": "FlyLoRA: Boosting Task Decoupling and Parameter Efficiency via Implicit Rank-Wise Mixture-of-Experts",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2507.10496",
+        "title": "Cameras as Relative Positional Encoding",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2511.21063",
+        "title": "G-Net: A Provably Easy Construction of High-Accuracy Random Binary Neural Networks",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2408.00041",
+        "title": "Con4m: Context-aware Consistency Learning Framework for Segmented Time Series Classification",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2412.16219",
+        "title": "Adaptive Calibration: A Unified Conversion Framework of Spiking Neural Network",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2404.14743",
+        "title": "Gradient Guidance for Diffusion Models: An Optimization Perspective",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2506.01183",
+        "title": "Doubly Robust Alignment for Large Language Models",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2503.08059",
+        "title": "Symbolic Neural Ordinary Differential Equations",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2407.06315",
+        "title": "Shedding More Light on Robust Classifiers under the lens of Energy-based Models",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2410.23992",
+        "title": "Ada-MSHyper: Adaptive Multi-Scale Hypergraph Transformer for Time Series Forecasting",
+        "venue": "arXiv 2024"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 9,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "2312.06348",
+        "title": "DiffAIL: Diffusion Adversarial Imitation Learning",
+        "venue": "arXiv 2023"
+       },
+       {
+        "id": "2412.18844",
+        "title": "Improving Integrated Gradient-based Transferable Adversarial Examples by Refining the Integration Path",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2509.02327",
+        "title": "Variational Uncertainty Decomposition for In-Context Learning",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2403.01786",
+        "title": "Exposing the Deception: Uncovering More Forgery Clues for Deepfake Detection",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2402.08595",
+        "title": "Homomorphism Counts for Graph Neural Networks: All About That Basis",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2405.12250",
+        "title": "Your Transformer is Secretly Linear",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2503.06186",
+        "title": "PTDiffusion: Free Lunch for Generating Optical Illusion Hidden Pictures with Phase-Transferred Diffusion Model",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2312.00935",
+        "title": "Understanding Unimodal Bias in Multimodal Deep Linear Networks",
+        "venue": "arXiv 2023"
+       },
+       {
+        "id": "2410.19213",
+        "title": "Prototypical Hash Encoding for On-the-Fly Fine-Grained Category Discovery",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2210.07703",
+        "title": "Hybrid Decentralized Optimization: Leveraging Both First- and Zeroth-Order Optimizers for Faster Convergence",
+        "venue": "arXiv 2022"
+       }
+      ]
+     }
+    ],
+    "reject": [
+     {
+      "from": [
+       {
+        "bin": 0,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "2409.09306",
+        "title": "Keypoint-Integrated Instruction-Following Data Generation for Enhanced Human Pose and Action Understanding in Multimodal Models",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2405.17164",
+        "title": "WeiPer: OOD Detection using Weight Perturbations of Class Projections",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2505.22387",
+        "title": "DAM: Domain-Aware Module for Multi-Domain Dataset Condensation",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2410.15929",
+        "title": "Yeah, Un, Oh: Continuous and Real-time Backchannel Prediction with Fine-tuning of Voice Activity Projection",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2505.19420",
+        "title": "CAD-SLAM: Consistency-Aware Dynamic SLAM with Dynamic-Static Decoupled Mapping",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2405.13967",
+        "title": "Model Editing as a Robust and Denoised variant of DPO: A Case Study on Toxicity",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2503.21681",
+        "title": "A Comprehensive Benchmark for RNA 3D Structure-Function Modeling",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2511.09339",
+        "title": "mmJEE-Eval: A Bilingual Multimodal Benchmark for Evaluating Scientific Reasoning in Vision-Language Models",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2507.20953",
+        "title": "Mask-Free Audio-driven Talking Face Generation for Enhanced Visual Quality and Identity Preservation",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2511.09915",
+        "title": "HI-TransPA: Hearing Impairments Translation Personal Assistant",
+        "venue": "arXiv 2025"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 1,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "2507.02862",
+        "title": "RefTok: Reference-Based Tokenization for Video Generation",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2505.23911",
+        "title": "One Task Vector is not Enough: A Large-Scale Study for In-Context Learning",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2312.16457",
+        "title": "City-on-Web: Real-time Neural Rendering of Large-scale Scenes on the Web",
+        "venue": "arXiv 2023"
+       },
+       {
+        "id": "2504.16431",
+        "title": "Target Concrete Score Matching: A Holistic Framework for Discrete Diffusion",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2402.12061",
+        "title": "All Language Models Large and Small",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2503.16071",
+        "title": "Tuning LLMs by RAG Principles: Towards LLM-native Memory",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2410.11550",
+        "title": "Y-Mol: A Multiscale Biomedical Knowledge-Guided Large Language Model for Drug Development",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2405.00578",
+        "title": "The Real, the Better: Aligning Large Language Models with Online Human Behaviors",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2512.20666",
+        "title": "Dominating vs. Dominated: Generative Collapse in Diffusion Models",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2506.07735",
+        "title": "Language Embedding Meets Dynamic Graph: A New Exploration for Neural Architecture Representation Learning",
+        "venue": "arXiv 2025"
+       }
+      ]
+     },
+     {
+      "from": [
+       {
+        "bin": 2,
+        "n": 10
+       }
+      ],
+      "papers": [
+       {
+        "id": "2410.05655",
+        "title": "Efficient Policy Evaluation with Safety Constraint for Reinforcement Learning",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2411.16914",
+        "title": "Curvature in the Looking-Glass: Optimal Methods to Exploit Curvature of Expectation in the Loss Landscape",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2505.20582",
+        "title": "Total-Editing: Head Avatar with Editable Appearance, Motion, and Lighting",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2404.06181",
+        "title": "EPL: Evidential Prototype Learning for Semi-supervised Medical Image Segmentation",
+        "venue": "arXiv 2024"
+       },
+       {
+        "id": "2510.04727",
+        "title": "Directional Sheaf Hypergraph Networks: Unifying Learning on Directed and Undirected Hypergraphs",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2504.10542",
+        "title": "An Efficient Quantum Classifier Based on Hamiltonian Representations",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2506.00817",
+        "title": "One for All: Update Parameterized Knowledge Across Multiple Models",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2502.12929",
+        "title": "Flow-of-Options: Diversified and Improved LLM Reasoning by Thinking Through Options",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2507.09923",
+        "title": "IM-LUT: Interpolation Mixing Look-Up Tables for Image Super-Resolution",
+        "venue": "arXiv 2025"
+       },
+       {
+        "id": "2510.18383",
+        "title": "MENTOR: A Reinforcement Learning Framework for Enabling Tool Use in Small Models via Teacher-Optimized Rewards",
+        "venue": "arXiv 2025"
+       }
+      ]
+     },
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ]
+   }
+  }
+ }
+}
